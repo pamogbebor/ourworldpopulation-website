@@ -1,6 +1,5 @@
 
 const catColor = d3.scaleOrdinal( [`#36DD5A`, `#FEFE00`, `#FF7E00`, `#FF0000`, `#99004B`, `#7E0122`]);
-const caColor =  d3.scaleOrdinal(d3.schemeCategory10.map(col => polished.transparentize(0.2, col)));
 const weightColor = d3.scaleSequentialSqrt(d3.interpolateOrRd) 
 .domain([0, 1e7]);
 
@@ -15,7 +14,6 @@ const getTooltip = d => `
 
 const myGlobe = Globe()
   .globeImageUrl('//unpkg.com/three-globe/example/img/earth-night.jpg')
-  //.backgroundImageUrl('//unpkg.com/three-globe/example/img/night-sky.png')
   .pointLat('lat')
   .pointLng('lng')
   .pointAltitude(getAlt)
