@@ -34,6 +34,6 @@ fetch('population.json').then(res => res.json()).then(pop => {
     .labelsData(pop);
 });
 
-//myGlobe.controls().autoRotate = true;
-//myGlobe.controls().autoRotateSpeed = 0.9;
+myGlobe.controls().autoRotate = true;
+myGlobe.controls().autoRotateSpeed = 0.9;
 //myGlobe.controls().enabled = true;
