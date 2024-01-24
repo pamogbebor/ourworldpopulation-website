@@ -1,0 +1,66 @@
+/* Import Google Font cdn link*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+#everyContainer {
+  position: relative;
+  width: 50%;
+}
+
+/* Make the image responsive */
+#globe {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  z-index: 2;
+}
+
+#title {
+ position: absolute;
+ font-family: 'Georgia';
+ z-index: 5;
+ color: white;
+ font-size: 40px;
+ left: 30px;
+}
+
+
+#infoContainer {
+  text-align: center;
+}
+
+#info {
+  position: absolute;
+  top: 90%;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  margin: 0 5%;
+  font-family: 'Poppins', sans-serif;
+  z-index: 5;
+  white-space: nowrap
+}
+
+span {
+  margin: 0 5%;
+  
+}
+
+body { 
+  margin: 0; 
+  background-image: url('night-sky.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+  #info {
+    display: absolute;
+    font-size: 50%;
+    top: 86%;
+    text-align: center;
+  }
+  span {
+    display: flex;
+  }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <!-- <style> body { margin: 0; } </style> -->
+        <meta charset="UTF-8"/>
+        <meta name= 'viewport' content = "width=device-width, initial-scale = 1.0"/>
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge"/>
+        <title>Our World's Population</title>
+
+        <link rel="stylesheet" href="styles.css">
+        <script src="//unpkg.com/d3"></script>
+        <script src="//unpkg.com/polished@3.5.2/dist/polished.js"></script>
+        <script src="//unpkg.com/globe.gl"></script>
+    </head>
+    <body>
+    <div id="everyContainer">  
+        <div id="title">
+            <p>Our World's Population:</p>
+        </div>
+        <div id="globeContainer">
+            <div id="globe" width="100" height="100"> </div>
+        </div>
+        <div id="infoContainer">
+            <p id="info" width="300" height="300">
+                <span><b>World Birth Rate (2023 est.): </b> 17.464 births / 1000 people</span>
+                <span><b>World Population (2023 est.): </b> 8,045,311,447 </span>
+                <span><b>Average Life Expectancy: </b> 73.4 years</span>
+            </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    </body>
+</html>
